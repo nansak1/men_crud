@@ -1,0 +1,38 @@
+{
+  "name": "men_crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "babel-node buildScripts/srcServer.js",
+    "security-check": "nsp check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nansak1/men_crud.git"
+  },
+  "author": "naynay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nansak1/men_crud/issues"
+  },
+  "homepage": "https://github.com/nansak1/men_crud#readme",
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-register": "^6.22.0",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "npm-run-all": "^4.0.1",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-latest": "^6.22.0"
+  }
+}
